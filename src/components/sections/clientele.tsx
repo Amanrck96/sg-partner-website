@@ -94,7 +94,7 @@ export default function Clientele() {
             <TabsContent value="corporate">
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 py-12">
                 {corporateLogos.map((logo) => (
-                  <div key={logo.id} className="relative h-16 w-36 text-center" title={logo.description}>
+                  <div key={logo.id} className="relative h-20 w-40 text-center" title={logo.description}>
                     <Image
                       src={logo.imageUrl}
                       alt={logo.description}
@@ -109,7 +109,7 @@ export default function Clientele() {
             <TabsContent value="institutional">
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 py-12">
                 {institutionalLogos.map((logo) => (
-                  <div key={logo.id} className="relative h-16 w-36 text-center" title={logo.description}>
+                  <div key={logo.id} className="relative h-24 w-48 text-center" title={logo.description}>
                     <Image
                       src={logo.imageUrl}
                       alt={logo.description}
