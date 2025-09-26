@@ -16,7 +16,7 @@ import { Star } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import * as React from 'react';
 
-const corporateLogos = PlaceHolderImages.filter(img => ["client-logo-1", "client-logo-2", "client-logo-3", "client-logo-4", "client-logo-corporate-kineco", "client-logo-corporate-dexcel", "client-logo-corporate-sw", "client-logo-corporate-sanlayan", "client-logo-corporate-helios"].includes(img.id));
+const corporateLogos = PlaceHolderImages.filter(img => ["client-logo-1", "client-logo-2", "client-logo-3", "client-logo-corporate-kineco", "client-logo-corporate-dexcel", "client-logo-corporate-sw", "client-logo-corporate-sanlayan", "client-logo-corporate-helios", "client-logo-4"].includes(img.id));
 const institutionalLogos = PlaceHolderImages.filter(img => [
   'client-logo-institutional-reva',
   'client-logo-institutional-presidency',
@@ -109,7 +109,7 @@ export default function Clientele() {
             <TabsContent value="institutional">
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 py-12">
                 {institutionalLogos.map((logo) => (
-                  <div key={logo.id} className="relative h-24 w-48 text-center" title={logo.description}>
+                  <div key={logo.id} className="relative h-20 w-40 text-center" title={logo.description}>
                     <Image
                       src={logo.imageUrl}
                       alt={logo.description}
