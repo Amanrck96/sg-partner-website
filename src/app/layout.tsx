@@ -7,6 +7,7 @@ import Footer from '@/components/layout/footer';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.sgpartner.in'),
   title: 'SG Partner Reimagined',
   description: 'Redeveloped website for SG Partner with a modern design.',
 };
