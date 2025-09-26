@@ -37,51 +37,9 @@
       "imageHint": "company logo"
     },
     {
-      "id": "client-logo-institutional-1",
-      "description": "Firebird Institute of Research in Management",
-      "imageUrl": "https://images.unsplash.com/photo-1636720706064-cfcb6a9026b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "university logo"
-    },
-    {
-      "id": "client-logo-institutional-2",
-      "description": "GIMS",
-      "imageUrl": "https://images.unsplash.com/photo-1728206379417-29fac7328c2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "university logo"
-    },
-    {
-      "id": "client-logo-institutional-3",
-      "description": "Shri Ram Group",
-      "imageUrl": "https://images.unsplash.com/photo-1728206415817-edd426280277?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dW5pdmVyc2l0eSUyMGxvZ298ZW58MHx8fHwxNzU4ODQxMDQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "university logo"
-    },
-    {
-      "id": "client-logo-institutional-4",
-      "description": "KL University",
-      "imageUrl": "https://images.unsplash.com/photo-1717656604892-ac50747171c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "university logo"
-    },
-    {
-      "id": "client-logo-institutional-5",
-      "description": "JECRC University",
-      "imageUrl": "https://images.unsplash.com/photo-1717656604892-ac50747171c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "university logo"
-    },
-    {
-      "id": "client-logo-institutional-6",
-      "description": "Uttaranchal University",
-      "imageUrl": "https://images.unsplash.com/photo-1721441906254-b5d28d9114f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "university logo"
-    },
-    {
-      "id": "client-logo-institutional-7",
-      "description": "Bansal Group of Institutes",
-      "imageUrl": "https://images.unsplash.com/photo-1709227040897-14f6c6687086?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "university logo"
-    },
-    {
-      "id": "client-logo-institutional-8",
-      "description": "Geethanjali College of Engineering and Technology",
-      "imageUrl": "https://images.unsplash.com/photo-1637389426433-434edb8ee0f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "client-logo-institutional-reva",
+      "description": "REVA University, Bengaluru, India",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/firebase-studio-bots.appspot.com/o/image-1763188544901.png?alt=media&token=3e173e21-0e86-4f40-842e-a5796277b03b",
       "imageHint": "university logo"
     },
     {
