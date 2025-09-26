@@ -8,7 +8,7 @@ const services = [
     description: [
       "Identifying top talent through tailored campus engagement initiatives.",
       "Managing seamless campus selection—whether on-campus or via virtual placement drives till on-boarding.",
-      "Participating in various guidance phases with the corporate."
+      "we participate in various guidance phases with the corporate."
     ],
     footer: "Let’s build the future workforce together!"
   },
@@ -16,9 +16,10 @@ const services = [
     icon: Users,
     title: "Alumni Hiring",
     description: [
-      "Identifying and engaging with high-performing alumni from top institutions.",
-      "Facilitating meaningful connections between alumni and our corporate partners.",
-      "Streamlining the hiring process by sourcing pre-qualified professionals."
+      "Identify and engage with high-performing alumni from top institutions.",
+      "Facilitate meaningful connections between alumni and our corporate partners.",
+      "Streamline the hiring process by sourcing pre-qualified professionals with relevant industry experience.",
+      "By tapping into alumni talent, organizations can benefit from trusted, skilled professionals who bring proven capabilities and cultural alignment to the workplace and the exclusive tie up we have with are training partners across the country helps us in quick identifying the right talent for you."
     ],
     footer: "Let’s help you reconnect, recruit, and retain top alumni talent!"
   },
@@ -26,19 +27,20 @@ const services = [
     icon: Building,
     title: "Virtual Placement Office",
     description: [
-      "Leverage our vast network of recruiters across India.",
-      "Keep expenses in check with our dedicated team for cost-effective solutions.",
-      "Receive continuous assistance from shortlisting to student onboarding with complete transparency."
+      "Leverage our vast and ever-growing network of recruiters across India, with a strong local presence.",
+      "Keep expenses in check with the support of our dedicated team, ensuring cost-effective and efficient hiring solutions.",
+      "Receive continuous assistance from candidate shortlisting to student onboarding, with complete transparency.",
+      "Benefit from a commitment to integrity, ensuring a fair and structured recruitment process guided by experienced professionals."
     ],
-    footer: "Partner with us and elevate your institution’s placement success."
+    footer: "Partner with us and elevate your institution’s placement success with a trusted, efficient, and ethical approach."
   },
   {
     icon: Search,
     title: "Executive Search",
     description: [
-      "Extensive Talent Network of industry professionals and leadership talent.",
-      "Advanced Search Methodologies using data-driven insights and market intelligence.",
-      "Personalized, end-to-end support from sourcing to final onboarding."
+      "Extensive Talent Network – We leverage a vast network of industry professionals and leadership talent.",
+      "Advanced Search Methodologies – Utilizing data-driven insights and market intelligence, we identify the best-fit candidates.",
+      "Personalized Support – From sourcing to final onboarding, we provide end-to-end assistance, ensuring a seamless hiring process."
     ],
     footer: "Let’s help you find exceptional leaders who make a difference!"
   },

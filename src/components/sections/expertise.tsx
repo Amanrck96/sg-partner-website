@@ -12,7 +12,7 @@ const expertiseData = {
       'Corporate Campus Branding Support',
       'Executive Search',
     ],
-    description: 'With a rich broadband spectrum of Pan India Network in Non-IT/IT & Engineering, we possess an in-depth understanding of the industry\'s needs.',
+    description: 'With a rich broadband spectrum of Pan India Network in Non-IT/IT & Engineering, we possess an in-depth understanding of the industry\'s needs. Our expertise spans:',
   },
   approach: {
     title: 'Our Approach',
