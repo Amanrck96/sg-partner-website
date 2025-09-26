@@ -12,15 +12,16 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { ModeToggle } from "../mode-toggle";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/#about", label: "About Us" },
-  { href: "/#expertise", label: "Expertise" },
-  { href: "/#services", label: "Services" },
-  { href: "/#clientele", label: "Clientele" },
+  { href: "/about", label: "About Us" },
+  { href: "/expertise", label: "Expertise" },
+  { href: "/services", label: "Services" },
+  { href: "/clientele", label: "Clientele" },
   { href: "/blog", label: "Blog" },
-  { href: "/#contact", label: "Contact Us" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 export default function Header() {
@@ -60,9 +61,11 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <ModeToggle />
         </nav>
 
-        <div className="md:hidden">
+        <div className="flex items-center gap-2 md:hidden">
+          <ModeToggle />
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">

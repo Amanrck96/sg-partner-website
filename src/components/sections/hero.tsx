@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
+import { Typewriter } from '../typewriter';
 
 export default function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
@@ -21,17 +22,17 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-white">
         <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold leading-tight drop-shadow-lg">
-          Empowering Your Vision, Engineering Success
+          <Typewriter text="Empowering Your Vision, Engineering Success" />
         </h1>
         <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto drop-shadow-md">
           SG Partner delivers expert consultancy to navigate your business challenges and unlock sustainable growth.
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            <Link href="/#services">Our Services</Link>
+            <Link href="/services">Our Services</Link>
           </Button>
           <Button asChild size="lg" variant="secondary">
-            <Link href="/#contact">Contact Us</Link>
+            <Link href="/contact">Contact Us</Link>
           </Button>
         </div>
       </div>
