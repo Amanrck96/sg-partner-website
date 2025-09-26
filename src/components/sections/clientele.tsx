@@ -52,7 +52,7 @@ export default function Clientele() {
           <div className="text-center space-y-4 mb-12">
             <h2 className="font-headline text-3xl md:text-4xl text-accent font-bold">Our Esteemed Clientele</h2>
             <p className="max-w-2xl mx-auto text-lg text-foreground/80">
-              We are proud to have partnered with a diverse range of leading organizations.
+              We have had the privilege of working with a diverse range of leading organizations and institutions.
             </p>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
