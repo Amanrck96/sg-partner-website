@@ -77,6 +77,120 @@
       "description": "Abstract image for a blog post about leadership.",
       "imageUrl": "https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsZWFkZXJzaGlwfGVufDB8fHx8MTc1ODg2ODI0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "leadership"
+    },
+    {
+      "id": "client-logo-institutional-presidency",
+      "description": "Presidency University",
+      "imageUrl": "https://images.unsplash.com/photo-1636720706064-cfcb6a9026b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "client-logo-institutional-ramaiah",
+      "description": "Ramaiah University of Applied Sciences",
+      "imageUrl": "https://images.unsplash.com/photo-1738464024478-2a60ac914513?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "client-logo-institutional-vsb",
+      "description": "V.S.B. College of Engineering Technical Campus",
+      "imageUrl": "https://images.unsplash.com/photo-1636720706064-cfcb6a9026b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "client-logo-institutional-geethanjali",
+      "description": "Geethanjali College of Engineering and Technology",
+      "imageUrl": "https://images.unsplash.com/photo-1738464024478-2a60ac914513?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "client-logo-institutional-soa",
+      "description": "Siksha 'O' Anusandhan (SOA) University",
+      "imageUrl": "https://images.unsplash.com/photo-1717656604892-ac50747171c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "client-logo-institutional-kl",
+      "description": "Koneru Lakshmaiah Education Foundation (KL)",
+      "imageUrl": "https://images.unsplash.com/photo-1738464024478-2a60ac914513?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "client-logo-institutional-jecrc",
+      "description": "JECRC University",
+      "imageUrl": "https://images.unsplash.com/photo-1636720706064-cfcb6a9026b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "client-logo-institutional-gm",
+      "description": "GM University",
+      "imageUrl": "https://images.unsplash.com/photo-1738464024478-2a60ac914513?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "client-logo-institutional-imarticus",
+      "description": "Imarticus Learning",
+      "imageUrl": "https://images.unsplash.com/photo-1723613900887-f399a35f726d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGVhcm5pbmclMjBsb2dvfGVufDB8fHx8MTc1ODg4MjUyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "learning logo"
+    },
+    {
+      "id": "client-logo-institutional-mite",
+      "description": "MITE Mangalore",
+      "imageUrl": "https://images.unsplash.com/photo-1728206313441-281ef4ea5d62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "client-logo-institutional-mlrit",
+      "description": "MLR Institute of Technology (MLRIT)",
+      "imageUrl": "https://images.unsplash.com/photo-1636720706064-cfcb6a9026b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "client-logo-institutional-uttaranchal",
+      "description": "Uttaranchal University",
+      "imageUrl": "https://images.unsplash.com/photo-1636720706064-cfcb6a9026b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "client-logo-institutional-oriental",
+      "description": "Oriental Group of Institutes",
+      "imageUrl": "https://images.unsplash.com/photo-1738464024478-2a60ac914513?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxpbnN0aXR1dGUlMjBsb2dvfGVufDB8fHx8MTc1ODg4MjUyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "institute logo"
+    },
+    {
+      "id": "client-logo-institutional-jis",
+      "description": "JIS University",
+      "imageUrl": "https://images.unsplash.com/photo-1721441906254-b5d28d9114f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1bml2ZXJzaXR5JTIwbG9nb3xlbnwwfHx8fDE3NTg4NDEwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "client-logo-corporate-kineco",
+      "description": "Kineco",
+      "imageUrl": "https://images.unsplash.com/photo-1622465911368-72162f8da3e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg4ODE5NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "client-logo-corporate-dexcel",
+      "description": "DeXcel",
+      "imageUrl": "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg4ODE5NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "client-logo-corporate-sw",
+      "description": "SW/SS Company",
+      "imageUrl": "https://images.unsplash.com/photo-1687523327554-fa9f50423489?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg4ODE5NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "client-logo-corporate-sanlayan",
+      "description": "Sanlayan Technologies",
+      "imageUrl": "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg4ODE5NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "client-logo-corporate-helios",
+      "description": "Helios Packaging",
+      "imageUrl": "https://images.unsplash.com/photo-1529612700005-e35377bf1415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg4ODE5NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
     }
   ]
 }
