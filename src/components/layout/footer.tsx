@@ -16,7 +16,7 @@ const socialLinks = [
   {
     name: 'Email',
     icon: Mail,
-    href: 'mailto:contact@sgpartner.com',
+    href: 'mailto:contact@sgpartner.in',
   },
   {
     name: 'Instagram',

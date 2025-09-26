@@ -46,7 +46,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-lg text-primary">Email</h3>
-                <p className="text-muted-foreground">contact@sgpartner.com</p>
+                <p className="text-muted-foreground">contact@sgpartner.in</p>
               </div>
             </div>
             <div className="aspect-video w-full bg-muted rounded-lg overflow-hidden">
