@@ -102,14 +102,14 @@ export default function Clientele() {
               <TabsTrigger value="institutional">Institutional</TabsTrigger>
             </TabsList>
             <TabsContent value="corporate">
-              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 py-12">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-items-center gap-8 md:gap-12 py-12">
                 {corporateLogos.map((logo) => (
-                  <div key={logo.id} className="relative h-20 w-40 text-center" title={logo.description}>
+                  <div key={logo.id} className="relative h-24 w-48 text-center" title={logo.description}>
                     <Image
                       src={logo.imageUrl}
                       alt={logo.description}
                       fill
-                      className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                      className="object-contain"
                       data-ai-hint={logo.imageHint}
                     />
                   </div>
@@ -117,14 +117,14 @@ export default function Clientele() {
               </div>
             </TabsContent>
             <TabsContent value="institutional">
-              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 py-12">
+              <div className="grid grid-cols-2 md:grid-cols-3 items-center justify-items-center gap-8 md:gap-12 py-12">
                 {institutionalLogos.map((logo) => (
-                  <div key={logo.id} className="relative h-20 w-40 text-center" title={logo.description}>
+                  <div key={logo.id} className="relative h-24 w-48 text-center" title={logo.description}>
                     <Image
                       src={logo.imageUrl}
                       alt={logo.description}
                       fill
-                      className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                      className="object-contain"
                       data-ai-hint={logo.imageHint}
                     />
                   </div>
