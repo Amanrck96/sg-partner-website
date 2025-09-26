@@ -19,7 +19,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-lg text-primary">Our Office</h3>
-                <p className="text-muted-foreground">123 Business Avenue, Suite 456<br />Metropolis, 12345</p>
+                <p className="text-muted-foreground">KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -28,7 +28,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-lg text-primary">Phone</h3>
-                <p className="text-muted-foreground">(123) 456-7890</p>
+                <p className="text-muted-foreground">Anand: 63633 75377</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -41,9 +41,15 @@ export default function Contact() {
               </div>
             </div>
             <div className="aspect-video w-full bg-muted rounded-lg overflow-hidden">
-                <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                    <p className="text-muted-foreground">Map Placeholder</p>
-                </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.838521799983!2d77.62227707481028!3d12.9822097873323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae168ce518933d%3A0x26c2e399033cb244!2sD&#39;Souza%20Layout%2C%20Ashok%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560001%2C%20India!5e0!3m2!1sen!2sus!4v1758957813009!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
           <div>
