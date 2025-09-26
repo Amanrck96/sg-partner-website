@@ -12,8 +12,10 @@ import {
 } from '@/components/ui/carousel';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Star } from 'lucide-react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-const clientLogos = PlaceHolderImages.filter(img => img.id.startsWith('client-logo-'));
+const corporateLogos = PlaceHolderImages.filter(img => img.id.startsWith('client-logo-') && !img.id.includes('institutional'));
+const institutionalLogos = PlaceHolderImages.filter(img => img.id.startsWith('client-logo-institutional-'));
 
 const testimonials = [
   {
@@ -55,19 +57,43 @@ export default function Clientele() {
               We have had the privilege of working with a diverse range of leading organizations and institutions.
             </p>
           </div>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            {clientLogos.map((logo) => (
-              <div key={logo.id} className="relative h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300" title={logo.description}>
-                <Image
-                  src={logo.imageUrl}
-                  alt={logo.description}
-                  fill
-                  className="object-contain"
-                  data-ai-hint={logo.imageHint}
-                />
+
+          <Tabs defaultValue="corporate" className="w-full">
+            <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto">
+              <TabsTrigger value="corporate">Corporate</TabsTrigger>
+              <TabsTrigger value="institutional">Institutional</TabsTrigger>
+            </TabsList>
+            <TabsContent value="corporate">
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 py-12">
+                {corporateLogos.map((logo) => (
+                  <div key={logo.id} className="relative h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300" title={logo.description}>
+                    <Image
+                      src={logo.imageUrl}
+                      alt={logo.description}
+                      fill
+                      className="object-contain"
+                      data-ai-hint={logo.imageHint}
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </TabsContent>
+            <TabsContent value="institutional">
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 py-12">
+                {institutionalLogos.map((logo) => (
+                  <div key={logo.id} className="relative h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300" title={logo.description}>
+                    <Image
+                      src={logo.imageUrl}
+                      alt={logo.description}
+                      fill
+                      className="object-contain"
+                      data-ai-hint={logo.imageHint}
+                    />
+                  </div>
+                ))}
+              </div>
+            </TabsContent>
+          </Tabs>
         </div>
 
         <div>
