@@ -1,43 +1,42 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
-import { MapPin, Phone } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 export default function About() {
   const aboutImage = PlaceHolderImages.find((img) => img.id === 'about-us-team');
+
+  const commitmentPoints = [
+    'Equip students and professionals with industry-relevant skills and expertise',
+    'Facilitate connections between top talent and leading businesses',
+    'Provide personalized support and guidance to ensure career success',
+    'Continuously innovate and improve our services to meet the evolving needs of the industry',
+  ];
+
+  const industries = {
+    'IT': 'Mobility, Analytics, Telecom, Infrastructure, Networking, E-commerce, Health Care, Storage and Server, CRM/ERP, Application Support, Hospitality',
+    'Non-IT': 'Banking & Insurance, Retail, FMCG, Pharmaceuticals & Health care, Manufacturing, Chemical, Construction, Advertisement'
+  }
 
   return (
     <section id="about" className="bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="font-headline text-3xl md:text-4xl text-accent font-bold">About SG Partner</h2>
+            <h2 className="font-headline text-3xl md:text-4xl text-accent font-bold">Welcome to SG Partner</h2>
             <p className="text-lg text-foreground/80">
-              Founded on the principles of integrity and excellence, SG Partner is a premier consultancy firm dedicated to helping businesses thrive in a complex world. We believe in building lasting partnerships with our clients, providing tailored solutions that drive innovation and deliver tangible results.
+              SG Partner, a leading Campus Engagement and Recruitment Solutions provider, specializes in connecting top talent with prominent businesses. With over 25+ years of Pan India experience, we offer a comprehensive range of services designed to foster growth, innovation, and excellence.
             </p>
-            <p className="text-foreground/80">
-              Our team of seasoned experts brings a wealth of experience from diverse industries. We are united by a common mission: to empower your organization with the strategic insights and operational support needed to achieve its most ambitious goals. At SG Partner, your success is our business.
-            </p>
-            <div className="space-y-4 pt-4">
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <MapPin className="w-6 h-6 text-accent" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg text-primary">Our Office</h3>
-                  <p className="text-muted-foreground">KG Halli, D' Souza Layout, Ashok Nagar<br />Bengaluru, Karnataka 560001</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <Phone className="w-6 h-6 text-accent" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg text-primary">Contact</h3>
-                  <p className="text-muted-foreground">Anand - 63633 75377</p>
-                </div>
-              </div>
+            <div className='space-y-2'>
+                <p className='font-bold'>Our expertise spans:</p>
+                <ul className='list-disc list-inside text-foreground/80'>
+                    <li>Campus Recruitment & Support</li>
+                    <li>Alumni Hiring</li>
+                    <li>Assessment & Training Support</li>
+                    <li>Executive Search</li>
+                </ul>
             </div>
+            
           </div>
           <div>
             {aboutImage && (
@@ -56,6 +55,36 @@ export default function About() {
             )}
           </div>
         </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-12">
+            <div className="space-y-6">
+                <h3 className="font-headline text-2xl text-primary font-bold">Our Mission</h3>
+                <p className="text-foreground/80">
+                At SG Partner, our mission is to empower young talents and professionals with the skills, expertise, and connections/placement opportunities required to succeed in their chosen careers. We strive to build a vibrant ecosystem that fosters growth, innovation, and excellence by providing comprehensive recruitment, training, and placement solutions.
+                </p>
+                <h3 className="font-headline text-2xl text-primary font-bold">Our Commitment</h3>
+                <ul className="space-y-3">
+                    {commitmentPoints.map((point, index) => (
+                        <li key={index} className="flex items-start">
+                            <CheckCircle className="h-5 w-5 text-accent mr-2 mt-1 flex-shrink-0" />
+                            <span className="text-foreground/80">{point}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div className="space-y-6">
+                <h3 className="font-headline text-2xl text-primary font-bold">Industries We Serve</h3>
+                <div className="space-y-4">
+                    {Object.entries(industries).map(([key, value]) => (
+                        <div key={key}>
+                            <h4 className="font-bold text-lg text-primary">{key}</h4>
+                            <p className="text-muted-foreground">{value}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+
       </div>
     </section>
   );

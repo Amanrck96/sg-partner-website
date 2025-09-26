@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, Briefcase } from "lucide-react";
+import { Menu, Briefcase, ChevronDown } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -11,16 +11,27 @@ import {
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "../mode-toggle";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
-  { href: "/expertise", label: "Expertise" },
   { href: "/services", label: "Services" },
-  { href: "/clientele", label: "Clientele" },
-  { href: "/blog", label: "Blog" },
+  {
+    href: "/clientele",
+    label: "Clientele",
+    subLinks: [
+      { href: "/clientele", query: {tab: "corporate"}, label: "Corporate" },
+      { href: "/clientele", query: {tab: "institutional"}, label: "Institutional" },
+    ],
+  },
   { href: "/contact", label: "Contact Us" },
 ];
 
@@ -52,15 +63,33 @@ export default function Header() {
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) =>
+            link.subLinks ? (
+              <DropdownMenu key={link.href}>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" className="flex items-center gap-1 text-sm font-medium text-foreground/80 transition-colors hover:text-primary px-0">
+                    {link.label}
+                    <ChevronDown className="h-4 w-4" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  {link.subLinks.map((subLink) => (
+                    <DropdownMenuItem key={subLink.label} asChild>
+                      <Link href={{ pathname: subLink.href, query: subLink.query }}>{subLink.label}</Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            ) : (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
+              >
+                {link.label}
+              </Link>
+            )
+          )}
           <ModeToggle />
         </nav>
 

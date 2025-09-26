@@ -46,6 +46,20 @@ const services = [
   },
 ];
 
+const otherServices = {
+    title: "What We Do?",
+    description: "At SG Partner, we specialize in providing innovative recruitment and Job oriented training solutions to connect top talent with leading businesses. Our services include:",
+    points: [
+      'Recruitment/Placements Drive: On-campus or virtual hiring process',
+      'Campus Placement Week Concept',
+      'Alumni Lateral Hiring Solution',
+      'Corporate Readiness Training Services',
+      'Industry-Specific Training Services',
+      'Virtual Hiring Solution',
+      'Executive Search',
+    ],
+}
+
 export default function Services() {
   return (
     <section id="services">
@@ -80,6 +94,24 @@ export default function Services() {
               </div>
             </Card>
           ))}
+        </div>
+        <div className='mt-16'>
+            <Card className="shadow-lg">
+                <CardHeader>
+                    <CardTitle className="font-headline text-2xl text-primary">{otherServices.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-muted-foreground mb-4">{otherServices.description}</p>
+                    <ul className="space-y-2 grid md:grid-cols-2 gap-x-8">
+                        {otherServices.points.map((point, index) => (
+                            <li key={index} className="flex items-start">
+                            <CheckCircle className="text-accent mr-2 mt-1 h-5 w-5 flex-shrink-0" />
+                            <span className="text-foreground/90">{point}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </CardContent>
+            </Card>
         </div>
       </div>
     </section>

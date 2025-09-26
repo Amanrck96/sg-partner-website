@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image';
+import { useSearchParams } from 'next/navigation';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
 import {
@@ -13,8 +14,9 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Star } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import * as React from 'react';
 
-const corporateLogos = PlaceHolderImages.filter(img => img.id.startsWith('client-logo-') && !img.id.includes('institutional'));
+const corporateLogos = PlaceHolderImages.filter(img => ["client-logo-1", "client-logo-2", "client-logo-3", "client-logo-4"].includes(img.id));
 const institutionalLogos = PlaceHolderImages.filter(img => img.id.startsWith('client-logo-institutional-'));
 
 const testimonials = [
@@ -46,6 +48,16 @@ const testimonials = [
 
 export default function Clientele() {
   const getAvatar = (avatarId: string) => PlaceHolderImages.find(img => img.id === avatarId);
+  const searchParams = useSearchParams();
+  const defaultTab = searchParams.get('tab') || 'corporate';
+  const [activeTab, setActiveTab] = React.useState(defaultTab);
+
+  React.useEffect(() => {
+    const tab = searchParams.get('tab');
+    if (tab === 'corporate' || tab === 'institutional') {
+      setActiveTab(tab);
+    }
+  }, [searchParams]);
 
   return (
     <section id="clientele" className="bg-secondary">
@@ -58,7 +70,7 @@ export default function Clientele() {
             </p>
           </div>
 
-          <Tabs defaultValue="corporate" className="w-full">
+          <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
             <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto">
               <TabsTrigger value="corporate">Corporate</TabsTrigger>
               <TabsTrigger value="institutional">Institutional</TabsTrigger>

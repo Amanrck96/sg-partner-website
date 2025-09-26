@@ -22,10 +22,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-white">
         <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold leading-tight drop-shadow-lg">
-          <Typewriter text="Empowering Your Vision, Engineering Success" />
+          <Typewriter text="Connect, Recruit and Thrive : Your Partner in Campus Recruitment" />
         </h1>
         <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto drop-shadow-md">
-          SG Partner delivers expert consultancy to navigate your business challenges and unlock sustainable growth.
+          Welcome to SG Partner. We deliver expert consultancy to navigate your business challenges and unlock sustainable growth.
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">

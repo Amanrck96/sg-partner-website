@@ -1,4 +1,4 @@
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Target, Search, Settings } from 'lucide-react';
 
 const expertiseData = {
@@ -24,34 +24,25 @@ const expertiseData = {
     ],
     description: 'We take pride in our meticulous approach, ensuring that every aspect of the Fresher Hiring through Campus Engagement is meticulously maintained. Our team actively participates in the Campus Engagement process, guaranteeing:',
   },
-  whatWeDo: {
-    title: 'What We Do?',
-    icon: Settings,
-    points: [
-      'Recruitment/Placements Drive: On-campus or virtual hiring process',
-      'Campus Placement Week Concept',
-      'Alumni Lateral Hiring Solution',
-      'Corporate Readiness Training Services',
-      'Industry-Specific Training Services',
-      'Virtual Hiring Solution',
-      'Executive Search',
-    ],
-    description: 'At SG Partner, we specialize in providing innovative recruitment and Job oriented training solutions to connect top talent with leading businesses. Our services include:',
-  },
 };
 
 export default function Expertise() {
   return (
     <section id="expertise">
+        <div className="text-center space-y-4 mb-12">
+          <h2 className="font-headline text-3xl md:text-4xl text-accent font-bold">Our Expertise & Approach</h2>
+        </div>
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {Object.values(expertiseData).map((item) => (
             <Card key={item.title} className="shadow-lg">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <item.icon className="w-8 h-8 text-accent mr-4" />
-                  <h3 className="font-headline text-2xl text-primary">{item.title}</h3>
-                </div>
+                <CardHeader>
+                    <div className="flex items-center">
+                        <item.icon className="w-8 h-8 text-accent mr-4" />
+                        <CardTitle className="font-headline text-2xl text-primary">{item.title}</CardTitle>
+                    </div>
+                </CardHeader>
+              <CardContent>
                 <p className="text-muted-foreground mb-4">{item.description}</p>
                 <ul className="space-y-2">
                   {item.points.map((point, index) => (
