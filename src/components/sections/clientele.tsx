@@ -57,7 +57,7 @@ export default function Clientele() {
           </div>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {clientLogos.map((logo) => (
-              <div key={logo.id} className="relative h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300">
+              <div key={logo.id} className="relative h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300" title={logo.description}>
                 <Image
                   src={logo.imageUrl}
                   alt={logo.description}
