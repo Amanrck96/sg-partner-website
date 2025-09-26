@@ -66,12 +66,12 @@ export default function Clientele() {
             <TabsContent value="corporate">
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 py-12">
                 {corporateLogos.map((logo) => (
-                  <div key={logo.id} className="relative h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300" title={logo.description}>
+                  <div key={logo.id} className="relative h-16 w-36 text-center" title={logo.description}>
                     <Image
                       src={logo.imageUrl}
                       alt={logo.description}
                       fill
-                      className="object-contain"
+                      className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
                       data-ai-hint={logo.imageHint}
                     />
                   </div>
@@ -81,12 +81,12 @@ export default function Clientele() {
             <TabsContent value="institutional">
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 py-12">
                 {institutionalLogos.map((logo) => (
-                  <div key={logo.id} className="relative h-12 w-32 grayscale hover:grayscale-0 transition-all duration-300" title={logo.description}>
+                  <div key={logo.id} className="relative h-16 w-36 text-center" title={logo.description}>
                     <Image
                       src={logo.imageUrl}
                       alt={logo.description}
                       fill
-                      className="object-contain"
+                      className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
                       data-ai-hint={logo.imageHint}
                     />
                   </div>
