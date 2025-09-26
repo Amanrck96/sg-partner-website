@@ -1,36 +1,46 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
-import { Briefcase, Landmark, Scale, HeartHandshake, Building2, Users } from 'lucide-react';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Briefcase, Users, Building, Search, CheckCircle } from 'lucide-react';
 
 const services = [
   {
     icon: Briefcase,
-    title: "Corporate Advisory",
-    description: "Strategic guidance for corporate structuring, governance, and compliance to ensure sustainable growth."
-  },
-  {
-    icon: Landmark,
-    title: "Financial Institutions",
-    description: "Specialized consultancy for banks and financial institutions on regulatory frameworks and risk management."
-  },
-  {
-    icon: Scale,
-    title: "Legal & Secretarial",
-    description: "Comprehensive support for legal documentation, corporate filings, and secretarial practices."
-  },
-  {
-    icon: HeartHandshake,
-    title: "Non-Profit Sector",
-    description: "Assisting non-profits with governance, funding strategies, and compliance for greater social impact."
-  },
-  {
-    icon: Building2,
-    title: "Real Estate",
-    description: "Expert advice on real estate transactions, RERA compliance, and project structuring."
+    title: "Campus Engagement For Corporates",
+    description: [
+      "Identifying top talent through tailored campus engagement initiatives.",
+      "Managing seamless campus selection—whether on-campus or via virtual placement drives till on-boarding.",
+      "Participating in various guidance phases with the corporate."
+    ],
+    footer: "Let’s build the future workforce together!"
   },
   {
     icon: Users,
-    title: "Human Resources",
-    description: "Solutions for talent management, compliance with labor laws, and HR policy development."
+    title: "Alumni Hiring",
+    description: [
+      "Identifying and engaging with high-performing alumni from top institutions.",
+      "Facilitating meaningful connections between alumni and our corporate partners.",
+      "Streamlining the hiring process by sourcing pre-qualified professionals."
+    ],
+    footer: "Let’s help you reconnect, recruit, and retain top alumni talent!"
+  },
+  {
+    icon: Building,
+    title: "Virtual Placement Office",
+    description: [
+      "Leverage our vast network of recruiters across India.",
+      "Keep expenses in check with our dedicated team for cost-effective solutions.",
+      "Receive continuous assistance from shortlisting to student onboarding with complete transparency."
+    ],
+    footer: "Partner with us and elevate your institution’s placement success."
+  },
+  {
+    icon: Search,
+    title: "Executive Search",
+    description: [
+      "Extensive Talent Network of industry professionals and leadership talent.",
+      "Advanced Search Methodologies using data-driven insights and market intelligence.",
+      "Personalized, end-to-end support from sourcing to final onboarding."
+    ],
+    footer: "Let’s help you find exceptional leaders who make a difference!"
   },
 ];
 
@@ -44,18 +54,28 @@ export default function Services() {
             We provide a comprehensive range of services to meet the diverse needs of our clients.
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service) => (
-            <Card key={service.title} className="text-center group hover:shadow-lg transition-shadow duration-300">
+            <Card key={service.title} className="flex flex-col text-center group hover:shadow-lg transition-shadow duration-300">
               <CardHeader className="items-center">
                 <div className="bg-primary/10 p-4 rounded-full">
                   <service.icon className="w-10 h-10 text-accent" />
                 </div>
               </CardHeader>
-              <CardContent className="space-y-2">
+              <CardContent className="flex-grow space-y-4">
                 <CardTitle className="font-headline text-xl text-primary">{service.title}</CardTitle>
-                <CardDescription>{service.description}</CardDescription>
+                <ul className="text-left space-y-2 text-muted-foreground">
+                  {service.description.map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </CardContent>
+              <div className="p-6 pt-0">
+                <p className="font-semibold text-accent">{service.footer}</p>
+              </div>
             </Card>
           ))}
         </div>
