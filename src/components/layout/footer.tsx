@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Mail } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 import { FacebookIcon, InstagramIcon, LinkedinIcon } from '@/components/icons';
 
 const socialLinks = [
@@ -29,27 +29,37 @@ export default function Footer() {
   return (
     <footer className="bg-secondary">
       <div className="container mx-auto px-4 py-8 md:px-6">
-        <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-          <div className="flex items-center gap-4">
-            {socialLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                aria-label={link.name}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground transition-colors hover:text-primary"
-              >
-                <link.icon className="h-6 w-6" />
-              </Link>
-            ))}
-          </div>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div className="text-sm text-muted-foreground space-y-2 text-center md:text-left">
+                <div className="flex items-center justify-center md:justify-start gap-2">
+                    <MapPin className="h-4 w-4 text-primary" />
+                    <p>KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001</p>
+                </div>
+                <div className="flex items-center justify-center md:justify-start gap-2">
+                    <Phone className="h-4 w-4 text-primary" />
+                    <p>Anand: 63633 75377</p>
+                </div>
+            </div>
+            <div className="flex items-center gap-4">
+                {socialLinks.map((link) => (
+                <Link
+                    key={link.name}
+                    href={link.href}
+                    aria-label={link.name}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground transition-colors hover:text-primary"
+                >
+                    <link.icon className="h-6 w-6" />
+                </Link>
+                ))}
+            </div>
+        </div>
+        <div className="mt-8 border-t pt-6 flex flex-col md:flex-row items-center justify-between">
           <p className="text-center text-sm text-muted-foreground">
             All Rights Reserved by SG Partner
           </p>
-        </div>
-        <div className="mt-6 border-t pt-6">
-          <p className="text-center text-xs text-muted-foreground">
+          <p className="text-center text-xs text-muted-foreground mt-4 md:mt-0">
             Designed by Anand M (*AJK*)
           </p>
         </div>
