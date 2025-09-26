@@ -60,7 +60,7 @@ export default function Clientele() {
   }, [searchParams]);
 
   return (
-    <section id="clientele" className="bg-secondary">
+    <section id="clientele" className="py-20 md:py-28 bg-secondary">
       <div className="container mx-auto px-4 md:px-6 space-y-20">
         <div>
           <div className="text-center space-y-4 mb-12">

@@ -23,15 +23,17 @@ import { ModeToggle } from "../mode-toggle";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
+  { href: "/expertise", label: "Expertise" },
   { href: "/services", label: "Services" },
   {
     href: "/clientele",
     label: "Clientele",
     subLinks: [
-      { href: "/clientele", query: {tab: "corporate"}, label: "Corporate" },
-      { href: "/clientele", query: {tab: "institutional"}, label: "Institutional" },
+      { href: "/clientele?tab=corporate", label: "Corporate" },
+      { href: "/clientele?tab=institutional", label: "Institutional" },
     ],
   },
+  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact Us" },
 ];
 
@@ -65,7 +67,7 @@ export default function Header() {
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) =>
             link.subLinks ? (
-              <DropdownMenu key={link.href}>
+              <DropdownMenu key={link.label}>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" className="flex items-center gap-1 text-sm font-medium text-foreground/80 transition-colors hover:text-primary px-0">
                     {link.label}
@@ -75,7 +77,7 @@ export default function Header() {
                 <DropdownMenuContent>
                   {link.subLinks.map((subLink) => (
                     <DropdownMenuItem key={subLink.label} asChild>
-                      <Link href={{ pathname: subLink.href, query: subLink.query }}>{subLink.label}</Link>
+                      <Link href={subLink.href}>{subLink.label}</Link>
                     </DropdownMenuItem>
                   ))}
                 </DropdownMenuContent>
@@ -110,6 +112,23 @@ export default function Header() {
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
+                    link.subLinks ? (
+                      <div key={link.label} className="flex flex-col gap-2">
+                        <span className="text-lg font-medium text-foreground/80">{link.label}</span>
+                        <div className="flex flex-col gap-2 pl-4">
+                        {link.subLinks.map(sublink => (
+                          <SheetClose asChild key={sublink.href}>
+                             <Link
+                              href={sublink.href}
+                              className="text-base font-medium text-foreground/70 transition-colors hover:text-primary"
+                            >
+                              {sublink.label}
+                            </Link>
+                          </SheetClose>
+                        ))}
+                        </div>
+                      </div>
+                    ) : (
                     <SheetClose asChild key={link.href}>
                       <Link
                         href={link.href}
@@ -118,6 +137,7 @@ export default function Header() {
                         {link.label}
                       </Link>
                     </SheetClose>
+                    )
                   ))}
                 </nav>
               </div>
