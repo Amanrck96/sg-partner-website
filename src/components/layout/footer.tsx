@@ -1,27 +1,32 @@
 import Link from 'next/link';
 import { Mail, MapPin, Phone } from 'lucide-react';
-import { FacebookIcon, InstagramIcon, LinkedinIcon } from '@/components/icons';
+import { FacebookIcon, InstagramIcon, LinkedinIcon, XIcon } from '@/components/icons';
 
 const socialLinks = [
   {
     name: 'Facebook',
     icon: FacebookIcon,
-    href: '#',
+    href: 'https://www.facebook.com/people/SG-Partner/61571871577302/',
+  },
+  {
+    name: 'X',
+    icon: XIcon,
+    href: 'https://x.com/sgpartnerblr',
   },
   {
     name: 'LinkedIn',
     icon: LinkedinIcon,
-    href: '#',
-  },
-  {
-    name: 'Email',
-    icon: Mail,
-    href: 'mailto:contact@sgpartner.in',
+    href: 'https://www.linkedin.com/company/sgpartner/',
   },
   {
     name: 'Instagram',
     icon: InstagramIcon,
-    href: '#',
+    href: 'https://www.instagram.com/sgpartner.in/',
+  },
+  {
+    name: 'Email',
+    icon: Mail,
+    href: 'mailto:sgpartnerindia@gmail.com',
   },
 ];
 
