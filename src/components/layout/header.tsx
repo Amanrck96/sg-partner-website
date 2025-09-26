@@ -14,11 +14,12 @@ import {
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About Us" },
-  { href: "#services", label: "Services" },
-  { href: "#clientele", label: "Clientele" },
-  { href: "#contact", label: "Contact Us" },
+  { href: "/", label: "Home" },
+  { href: "/#about", label: "About Us" },
+  { href: "/#services", label: "Services" },
+  { href: "/#clientele", label: "Clientele" },
+  { href: "/blog", label: "Blog" },
+  { href: "/#contact", label: "Contact Us" },
 ];
 
 export default function Header() {
@@ -43,7 +44,7 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="#home" className="flex items-center gap-2 font-headline text-2xl font-bold text-primary">
+        <Link href="/" className="flex items-center gap-2 font-headline text-2xl font-bold text-primary">
           <Briefcase className="h-7 w-7 text-accent" />
           SG Partner
         </Link>
@@ -70,7 +71,7 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="left">
               <div className="flex flex-col gap-6 p-6">
-                <Link href="#home" className="flex items-center gap-2 font-headline text-2xl font-bold text-primary" onClick={() => setOpen(false)}>
+                <Link href="/" className="flex items-center gap-2 font-headline text-2xl font-bold text-primary" onClick={() => setOpen(false)}>
                   <Briefcase className="h-7 w-7 text-accent" />
                   SG Partner
                 </Link>

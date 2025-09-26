@@ -65,6 +65,24 @@
       "description": "Avatar for testimonial author 3",
       "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3ODg5NzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
+    },
+    {
+      "id": "blog-post-1",
+      "description": "Abstract image for a blog post about career growth.",
+      "imageUrl": "https://images.unsplash.com/photo-1730382625230-3756013c515c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXJlZXIlMjBncm93dGh8ZW58MHx8fHwxNzU4ODEyMTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "career growth"
+    },
+    {
+      "id": "blog-post-2",
+      "description": "Abstract image for a blog post about talent acquisition.",
+      "imageUrl": "https://images.unsplash.com/photo-1758518730162-09a142505bfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0YWxlbnQlMjBhY3F1aXNpdGlvbnxlbnwwfHx8fDE3NTg4NjgyNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "talent acquisition"
+    },
+    {
+      "id": "blog-post-3",
+      "description": "Abstract image for a blog post about leadership.",
+      "imageUrl": "https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsZWFkZXJzaGlwfGVufDB8fHx8MTc1ODg2ODI0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "leadership"
     }
   ]
 }

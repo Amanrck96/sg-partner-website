@@ -28,10 +28,10 @@ export default function Hero() {
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            <Link href="#services">Our Services</Link>
+            <Link href="/#services">Our Services</Link>
           </Button>
           <Button asChild size="lg" variant="secondary">
-            <Link href="#contact">Contact Us</Link>
+            <Link href="/#contact">Contact Us</Link>
           </Button>
         </div>
       </div>
