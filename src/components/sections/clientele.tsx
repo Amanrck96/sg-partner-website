@@ -16,7 +16,17 @@ import { Star } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import * as React from 'react';
 
-const corporateLogos = PlaceHolderImages.filter(img => ["client-logo-1", "client-logo-2", "client-logo-3", "client-logo-corporate-kineco", "client-logo-corporate-dexcel", "client-logo-corporate-sw", "client-logo-corporate-sanlayan", "client-logo-corporate-helios", "client-logo-4"].includes(img.id));
+const corporateLogos = PlaceHolderImages.filter(img => [
+    "client-logo-corporate-slk", 
+    "client-logo-corporate-tudip", 
+    "client-logo-corporate-hashedin", 
+    "client-logo-corporate-kineco", 
+    "client-logo-corporate-dexcel", 
+    "client-logo-corporate-sw", 
+    "client-logo-corporate-sanlayan", 
+    "client-logo-corporate-helios",
+    "client-logo-corporate-imarticus"
+].includes(img.id));
 const institutionalLogos = PlaceHolderImages.filter(img => [
   'client-logo-institutional-reva',
   'client-logo-institutional-presidency',
