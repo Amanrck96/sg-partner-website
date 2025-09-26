@@ -10,6 +10,9 @@ import {
   SheetContent,
   SheetTrigger,
   SheetClose,
+  SheetHeader,
+  SheetTitle,
+  SheetDescription,
 } from "@/components/ui/sheet";
 import {
   DropdownMenu,
@@ -105,6 +108,12 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
+              <SheetHeader className="sr-only">
+                <SheetTitle>Mobile Menu</SheetTitle>
+                <SheetDescription>
+                  A list of navigation links for the SG Partner website.
+                </SheetDescription>
+              </SheetHeader>
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2 font-headline text-2xl font-bold text-primary" onClick={() => setOpen(false)}>
                   <Briefcase className="h-7 w-7 text-accent" />
