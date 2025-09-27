@@ -41,3 +41,6 @@ next-env.d.ts
 
 # OS
 Thumbs.db
+
+# AI-related files (not needed for static site)
+/src/ai/

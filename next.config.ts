@@ -39,6 +39,12 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // Exclude AI-related files from static export
+  outputFileTracingExcludes: {
+    '*': [
+      './src/ai/**/*',
+    ],
+  },
 };
 
 export default nextConfig;
