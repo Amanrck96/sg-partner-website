@@ -15,6 +15,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Star } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import * as React from 'react';
+import { Suspense } from 'react';
 
 const corporateLogos = PlaceHolderImages.filter(img => [
     "client-logo-corporate-slk", 
@@ -72,7 +73,7 @@ const testimonials = [
   },
 ];
 
-export default function Clientele() {
+function ClienteleContent() {
   const getAvatar = (avatarId: string) => PlaceHolderImages.find(img => img.id === avatarId);
   const searchParams = useSearchParams();
   const defaultTab = searchParams.get('tab') || 'corporate';
@@ -153,7 +154,7 @@ export default function Clientele() {
                     <div className="p-1">
                       <Card>
                         <CardContent className="flex flex-col items-center text-center p-8 space-y-4">
-                          <p className="text-lg italic text-foreground/90">"{testimonial.text}"</p>
+                          <p className="text-lg italic text-foreground/90">&ldquo;{testimonial.text}&rdquo;</p>
                           <div className="flex items-center pt-4">
                             <Avatar className="h-12 w-12">
                               {avatar && <AvatarImage src={avatar.imageUrl} alt={testimonial.name} data-ai-hint={avatar.imageHint} />}
@@ -182,5 +183,13 @@ export default function Clientele() {
         </div>
       </div>
     </section>
+  );
+}
+
+export default function Clientele() {
+  return (
+    <Suspense fallback={<div className="py-20 md:py-28 bg-secondary"><div className="container mx-auto px-4 md:px-6 text-center">Loading...</div></div>}>
+      <ClienteleContent />
+    </Suspense>
   );
 }

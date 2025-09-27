@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Target, Search, Settings } from 'lucide-react';
+import { Target, Search } from 'lucide-react';
 
 const expertiseData = {
   expertise: {

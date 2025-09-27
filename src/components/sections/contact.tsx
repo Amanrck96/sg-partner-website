@@ -17,7 +17,7 @@ export default function Contact() {
         <div className="text-center space-y-4 mb-12">
           <h2 className="font-headline text-3xl md:text-4xl text-accent font-bold">Get In Touch</h2>
           <p className="max-w-2xl mx-auto text-lg text-foreground/80">
-            We're here to help. Contact us for any inquiries or to discuss how we can support your business.
+            We&apos;re here to help. Contact us for any inquiries or to discuss how we can support your business.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-12">
@@ -28,7 +28,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-lg text-primary">Our Office</h3>
-                <p className="text-muted-foreground">KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001</p>
+                <p className="text-muted-foreground">KG Halli, D&apos; Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -46,7 +46,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-lg text-primary">Email</h3>
-                <p className="text-muted-foreground">contact@sgpartner.in</p>
+                <p className="text-muted-foreground">sgpartnerindia@gmail.com</p>
               </div>
             </div>
             <div className="aspect-video w-full bg-muted rounded-lg overflow-hidden">

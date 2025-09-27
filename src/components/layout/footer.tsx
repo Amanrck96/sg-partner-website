@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="text-sm text-muted-foreground space-y-2 text-center md:text-left">
                 <div className="flex items-center justify-center md:justify-start gap-2">
                     <MapPin className="h-4 w-4 text-primary" />
-                    <p>KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001</p>
+                    <p>KG Halli, D&apos; Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560001</p>
                 </div>
                 <div className="flex items-center justify-center md:justify-start gap-2">
                     <Phone className="h-4 w-4 text-primary" />
