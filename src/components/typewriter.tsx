@@ -3,8 +3,10 @@
 import React, { useState, useEffect } from 'react';
 
 export function Typewriter({ text, speed = 100 }: { text: string, speed?: number }) {
-  const [displayedText, setDisplayedText] = useState('');
+  const [displayedText, setDisplayedText] = useState(text); // Initialize with full text to avoid animation issues
   
+  // Commenting out typewriter effect temporarily to debug display issues
+  /*
   useEffect(() => {
     let i = 0;
     setDisplayedText(''); // Reset on text change
@@ -19,6 +21,7 @@ export function Typewriter({ text, speed = 100 }: { text: string, speed?: number
 
     return () => clearInterval(typingInterval);
   }, [text, speed]);
+  */
 
   return <span>{displayedText}</span>;
 }

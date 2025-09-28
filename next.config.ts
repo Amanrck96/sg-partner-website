@@ -2,7 +2,7 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output: 'export',
+  // output: 'export', // Commenting out static export for development
   trailingSlash: true,
   images: {
     unoptimized: true,
