@@ -25,6 +25,9 @@ const formSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
+  subject: z.string().min(5, {
+    message: "Subject must be at least 5 characters.",
+  }),
   message: z.string().min(10, {
     message: "Message must be at least 10 characters.",
   }),
@@ -43,7 +46,7 @@ export default function ContactForm() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-  const formEndpoint = 'https://formspree.io/f/{your-form-hash}'; // Replace with your Formspree endpoint. Sign up at https://formspree.io/ to get your hash.
+  const formEndpoint = 'https://formspree.io/f/{your-form-hash}'; // Replace with your actual Formspree endpoint
   try {
     const response = await fetch(formEndpoint, {
       method: 'POST',
@@ -97,6 +100,19 @@ export default function ContactForm() {
                   <FormLabel>Email Address</FormLabel>
                   <FormControl>
                     <Input placeholder="john.doe@example.com" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="subject"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Subject</FormLabel>
+                  <FormControl>
+                    <Input placeholder="How can we help?" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
