@@ -42,14 +42,31 @@ export default function ContactForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. We will get back to you shortly.",
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+  const formEndpoint = 'https://formspree.io/f/{your-form-hash}'; // Replace with your Formspree endpoint. Sign up at https://formspree.io/ to get your hash.
+  try {
+    const response = await fetch(formEndpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(values)
     });
-    form.reset();
+    if (response.ok) {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for reaching out. We will get back to you shortly.",
+      });
+      form.reset();
+    } else {
+      throw new Error('Form submission failed');
+    }
+  } catch (error) {
+    toast({
+      title: "Error",
+      description: "There was a problem sending your message. Please try again.",
+      variant: "destructive"
+    });
   }
+}
 
   return (
     <Card className="shadow-lg">

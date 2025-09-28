@@ -1,59 +1,55 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Target, Search } from 'lucide-react';
 
-const expertiseData = {
-  expertise: {
-    title: 'Our Expertise',
-    icon: Target,
-    points: [
-      'Campus Engagement Support End to End Process',
-      'Alumni Hiring Support',
-      'Customized Campus Recruitment solutions',
-      'Corporate Campus Branding Support',
-      'Executive Search',
-    ],
-    description: 'With a rich broadband spectrum of Pan India Network in Non-IT/IT & Engineering, we possess an in-depth understanding of the industry\'s needs. Our expertise spans:',
-  },
-  approach: {
-    title: 'Our Approach',
-    icon: Search,
-    points: [
-      'High-quality product delivery',
-      'Constant monitoring of delivery standards',
-      'Seamless integration with client requirements',
-    ],
-    description: 'We take pride in our meticulous approach, ensuring that every aspect of the Fresher Hiring through Campus Engagement is meticulously maintained. Our team actively participates in the Campus Engagement process, guaranteeing:',
-  },
-};
+import Image from 'next/image';
+
+
+
+const images = [
+  '/images/expertise/29.jpg',
+  '/images/expertise/sg rectangle.jpg',
+  '/images/expertise/1.jpg',
+  '/images/expertise/2.jpg',
+  '/images/expertise/3.jpg',
+  '/images/expertise/4.jpg',
+  '/images/expertise/5.jpg',
+  '/images/expertise/6.jpg',
+  '/images/expertise/7.jpg',
+  '/images/expertise/8.jpg',
+  '/images/expertise/9.jpg',
+  '/images/expertise/10.jpg',
+  '/images/expertise/11.jpg',
+  '/images/expertise/12.jpg',
+  '/images/expertise/13.jpg',
+  '/images/expertise/14.jpg',
+  '/images/expertise/15.jpg',
+  '/images/expertise/16.jpg',
+  '/images/expertise/17.jpg',
+  '/images/expertise/18.jpg',
+  '/images/expertise/19.jpg',
+  '/images/expertise/20.jpg',
+  '/images/expertise/21.jpg',
+  '/images/expertise/22.jpg',
+  '/images/expertise/23.jpg'
+];
 
 export default function Expertise() {
   return (
     <section id="expertise" className="py-20 md:py-28">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl text-accent font-bold">Our Expertise & Approach</h2>
-        </div>
+      <div className="text-center space-y-4 mb-12">
+        <h2 className="font-headline text-3xl md:text-4xl text-accent font-bold">Our Expertise</h2>
+      </div>
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-8">
-          {Object.values(expertiseData).map((item) => (
-            <Card key={item.title} className="shadow-lg">
-                <CardHeader>
-                    <div className="flex items-center">
-                        <item.icon className="w-8 h-8 text-accent mr-4" />
-                        <CardTitle className="font-headline text-2xl text-primary">{item.title}</CardTitle>
-                    </div>
-                </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">{item.description}</p>
-                <ul className="space-y-2">
-                  {item.points.map((point, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="text-accent mr-2 mt-1">&#8226;</span>
-                      <span className="text-foreground/90">{point}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {images.map((src, index) => (
+            <div key={index} className="relative aspect-square overflow-hidden rounded-lg">
+              <Image
+                src={src}
+                alt={`Expertise image ${index + 1}`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+              />
+            </div>
           ))}
         </div>
       </div>

@@ -2,8 +2,9 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
-  // output: 'export', // Commenting out static export for development
   trailingSlash: true,
+  output: 'export',
+  basePath: '',
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -39,7 +40,6 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Exclude AI-related files from static export
   outputFileTracingExcludes: {
     '*': [
       './src/ai/**/*',

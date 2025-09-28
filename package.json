@@ -7,10 +7,11 @@
     "genkit:dev": "genkit start -- tsx src/ai/dev.ts",
     "genkit:watch": "genkit start -- tsx --watch src/ai/dev.ts",
     "build": "next build",
-    "export": "next build && next export",
+    "export": "cross-env GH_PAGES=true next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "deploy": "npm run export && npx gh-pages -d out"
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.14.1",
@@ -61,9 +62,11 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "cross-env": "^10.0.0",
     "eslint": "9.36.0",
     "eslint-config-next": "15.5.4",
     "genkit-cli": "^1.14.1",
+    "gh-pages": "^6.3.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
